@@ -1,0 +1,84 @@
+/* style/Home.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    color: #343a40;
+    font-weight: 600;
+  }
+  
+  .list-group-item {
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .list-group-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #218f24;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  .btn {
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .btn-warning {
+    background-color: #ffc107;
+    border: none;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    border: none;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    border: none;
+  }
+  .menu-icon {
+    font-size: 24px; /* Adjust size as needed */
+  }
+  
+  .menu-dropdown {
+    position: absolute;
+    top: 50px; /* Adjust based on your layout */
+    right: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+    z-index: 1000;
+    padding: 10px; /* Adjust padding */
+    min-width: 200px; /* Ensure a minimum width */
+  }
+  
+  .menu-dropdown .btn {
+    display: block;
+    width: 100%; /* Make buttons full width */
+  }
+  
+  

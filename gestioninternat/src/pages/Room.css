@@ -1,0 +1,89 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #343a40;
+  font-weight: 600;
+}
+
+.list-group-item {
+  border-radius: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+  border: 1px solid #e0e0e0;
+}
+
+.list-group-item:hover {
+  transform: translateY(-5px);
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #432f78;
+}
+
+p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.btn {
+  border-radius: 30px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border: none;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.logo-img {
+  height: 120px;
+  width: auto;
+}
+
+.menu-icon {
+  font-size: 24px; /* Ajustez la taille selon vos besoins */
+  position: relative;
+}
+
+.menu-dropdown {
+  position: absolute;
+  top: 50px; /* Ajustez en fonction de votre mise en page */
+  right: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+  z-index: 9999; /* Assurez-vous que le menu s'affiche bien au-dessus des autres éléments */
+  padding: 20px;
+  min-width: 200px;
+}
+
+.menu-dropdown .btn {
+  display: block;
+  width: 100%; /* Rendre les boutons en pleine largeur */
+}

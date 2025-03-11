@@ -1,0 +1,86 @@
+.custom-card {
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  width: 100%;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.custom-header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  color: #000000;
+}
+
+.custom-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.custom-input {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 12px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.custom-input:focus {
+  border-color: #80bdff;
+  outline: none;
+}
+
+.custom-button {
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  padding: 12px 24px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.custom-button.submit {
+  background: #378b44; /* Green color for submit button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-button.submit:hover {
+  background: #2c6e49; /* Darker green for hover */
+  transform: translateY(-2px);
+}
+
+.custom-button.cancel {
+  background: #908e8e; /* Red color for cancel button */
+  box-shadow: 0 4px 8px rgba(200, 197, 197, 0.2);
+}
+
+.custom-button.cancel:hover {
+  background: #908e8e; /* Darker red for hover */
+  transform: translateY(-2px);
+}
+
+.custom-alert {
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.animated-card {
+  animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

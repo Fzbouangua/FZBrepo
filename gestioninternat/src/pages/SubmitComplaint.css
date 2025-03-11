@@ -1,0 +1,60 @@
+/* Custom CSS for styling the form */
+.custom-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .custom-header {
+    color: #000000;
+    font-weight: bold;
+  }
+  
+  .custom-label {
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  .custom-textarea {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 1rem;
+    resize: none;
+  }
+  
+  .custom-button {
+    background-color: #848484;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-button:hover {
+    background-color: #218838;
+  }
+  
+  .custom-alert {
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .animated-card {
+    animation: fadeInUp 1s ease;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 40px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  

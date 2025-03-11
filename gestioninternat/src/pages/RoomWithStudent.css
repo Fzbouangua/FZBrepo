@@ -1,0 +1,77 @@
+.rooms-container {
+  padding: 20px;
+}
+
+.rooms-navbar {
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+.rooms-title {
+  color: #0c0c0c;
+  font-weight: 550;
+  font-size: 1.5rem; 
+}
+
+.rooms-card {
+  border: 1px solid #000000;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.rooms-card-header {
+  padding: 10px;
+  border-bottom: 1px solid #031e04;
+  background-color: #d1f7d1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.rooms-card-body {
+  padding: 15px;
+}
+
+/* Applique une couleur verte sans aucune nuance de bleu */
+.rooms-user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #2dac31; /* Vert clair */
+  color: white; /* Couleur du texte en blanc */
+}
+
+.rooms-user-info p {
+  margin-bottom: 0;
+}
+.rooms-card-header {
+  padding: 15px;
+  border-bottom: 1px solid #09c454; /* Bordure inférieure pour le header */
+  background-color: #ffffff; /* Couleur de fond pour le header */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.btn-change-room {
+  background-color: #000000; /* Couleur de fond noir */
+  color: #ffffff; /* Couleur du texte en blanc */
+  border: 1px solid #000000; /* Bordure noire pour le bouton */
+}
+
+.btn-change-room:hover {
+  background-color: #333333; /* Couleur de fond plus foncée au survol */
+  color: #ffffff; /* Couleur du texte en blanc au survol */
+}
+.btn-change-room {
+  background-color:#ffffff; /* Couleur de fond vert */
+  color: #000000; /* Couleur du texte en blanc */
+  border: 1px solid #4caf50; /* Bordure verte pour le bouton */
+}
+
+.btn-change-room:hover {
+  background-color: #45a049; /* Couleur de fond vert foncé au survol */
+  border-color: #45a049; /* Bordure verte foncée au survol */
+  color: #ffffff; /* Couleur du texte en blanc au survol */
+}
+
+

@@ -1,0 +1,188 @@
+/* Style pour la page */
+.menu-list-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Style pour l'en-tête */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    background-color: #ffffff; /* Couleur de fond de l'en-tête */
+    border-bottom: 1px solid #ffffff;
+    position: relative;
+}
+
+/* Logo */
+.logo-img {
+    width: 100px;
+    height: auto;
+}
+
+/* Style pour le menu hamburger */
+.hamburger-menu {
+    margin-left: auto;
+    cursor: pointer;
+    position: relative;
+}
+
+.hamburger-icon {
+    font-size: 20px;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hamburger-icon:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.1); /* Effet de zoom au survol */
+}
+
+/* Style pour le menu déroulant */
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 50px; /* Ajusté pour plus d'espace sous le menu hamburger */
+    right: 10px;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px;
+    width: 150px; /* Réduit la largeur du menu déroulant */
+}
+
+/* Affiche le menu lorsqu'il est ouvert */
+.menu-dropdown.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    width: auto; /* Ajuste automatiquement la largeur en fonction du contenu */
+}
+
+/* Style pour les liens du menu déroulant */
+.menu-link {
+    text-decoration: none;
+}
+
+/* Style pour les éléments du menu déroulant */
+.menu-dropdown a,
+.menu-dropdown button {
+    display: flex; /* Utilise flexbox pour centrer les éléments */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    padding: 12px 10px; /* Ajuste le padding pour un menu plus compact */
+    border: none;
+    background: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 14px; /* Réduit la taille de la police */
+    color: #333;
+    border-bottom: 1px solid #eee; /* Ligne de séparation entre les éléments */
+}
+
+/* Supprime la ligne de séparation pour le dernier élément du menu */
+.menu-dropdown button:last-child {
+    border-bottom: none;
+}
+
+/* Style pour les boutons dans le menu */
+.btn-custom {
+    font-size: 14px; /* Réduit la taille de la police des boutons */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+    width: 100%; /* Prend toute la largeur du menu */
+    box-sizing: border-box; /* Inclut le padding dans la largeur */
+    text-align: center; /* Aligne le texte au centre */
+    padding: 8px; /* Ajuste le padding pour les boutons */
+}
+
+/* Couleurs pour les boutons */
+.btn-custom-back {
+    background-color: #4CAF50; /* Vert pour retour */
+}
+
+.btn-custom-back:hover {
+    background-color: #d4dbd4; /* Vert plus foncé au survol */
+}
+
+.btn-custom-manage {
+    background-color: #2196F3; /* Bleu pour gérer les menus */
+}
+
+.btn-custom-manage:hover {
+    background-color: #d4dbd4; /* Bleu plus foncé au survol */
+}
+
+.btn-custom-delete {
+    background-color: #f44336; /* Rouge pour supprimer tout */
+}
+
+.btn-custom-delete:hover {
+    background-color: #e53935; /* Rouge plus foncé au survol */
+}
+
+/* Style pour le contenu principal */
+.content {
+    padding: 20px;
+    margin-top: 80px; /* Espace sous l'en-tête */
+}
+
+/* Style pour le tableau du menu */
+.menu-table {
+    width: calc(100% - 40px); /* Ajuster la largeur pour laisser de l'espace sur les côtés */
+    margin: 20px auto; /* Centrer le tableau avec de l'espace en haut et en bas */
+    border-collapse: collapse;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0 20px; /* Ajouter du padding horizontal */
+}
+
+.menu-table th, .menu-table td {
+    padding: 12px;
+    border-bottom: 1px solid #000000;
+    text-align: left;
+}
+
+.menu-table thead {
+    background-color: #75c97a;
+    font-weight: bold;
+}
+
+.menu-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Style pour le titre du menu */
+.menu-title {
+    font-size: 30px; /* Ajustez la taille de la police ici */
+    font-weight: bold;
+    margin: 20px 0; /* Espacement autour du titre */
+}
+
+/* Centrer les colonnes "Jour", "Petit Déjeuner", "Déjeuner", "Diner" */
+.menu-table th:nth-child(1),
+.menu-table th:nth-child(2),
+.menu-table th:nth-child(3),
+.menu-table th:nth-child(4),
+.menu-table td:nth-child(1),
+.menu-table td:nth-child(2),
+.menu-table td:nth-child(3),
+.menu-table td:nth-child(4) {
+    text-align: center; /* Centrer le texte dans ces colonnes */
+}

@@ -1,0 +1,52 @@
+/* style/Login.css */
+@keyframes moveBackground {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+  
+  .login-container {
+    height: 100vh;
+    background: url('../asset/image1.png') no-repeat center center fixed;
+    background-size: cover;
+    animation: moveBackground 20s linear infinite;
+  }
+  
+  .login-form {
+    max-width: 500px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  
+  
+  .form-group {
+    text-align: left; /* Aligne le label à gauche */
+  }
+  
+  .form-control {
+    width: 100%; /* Assure que les champs occupent toute la largeur disponible */
+    text-align: left; /* Aligne le texte dans les champs à gauche */
+  }
+  
+  label {
+    
+    margin-bottom: 0.5rem;
+  }
+  
+  .btn-block {
+    width: 50%;
+  }
+  

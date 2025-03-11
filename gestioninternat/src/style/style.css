@@ -1,0 +1,129 @@
+/* src/style/style.css */
+
+.dashboard {
+  position: relative; /* Nécessaire pour placer le menu et le contenu au-dessus de l'image */
+  height: 100vh; /* Hauteur de l'élément */
+  display: flex;
+  overflow: hidden; /* Assure que rien ne déborde */
+}
+
+.background-image {
+  position: absolute; /* Positionne l'image en arrière-plan */
+  top: 50%; /* Centre verticalement */
+  left: 50%; /* Centre horizontalement */
+  width: 100%; /* Largeur de l'image (ajustez selon vos besoins) */
+  height: 100%; /* Hauteur de l'image (ajustez selon vos besoins) */
+  background-image: url('../asset/imagee.png'); /* Chemin vers votre image */
+  background-size: cover; /* Ajuste l'image pour qu'elle couvre tout l'élément */
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat; /* Évite la répétition de l'image */
+  transform: translate(-50%, -50%); /* Centre l'image exactement au milieu de l'élément */
+  z-index: -1; /* Place l'image derrière le contenu */
+}
+
+.menu {
+  background: rgba(7, 38, 112, 0.941); /* Fond sombre semi-transparent pour le menu */
+  width: 250px; /* Largeur du menu */
+  height: 100vh; /* Hauteur du menu (pleine hauteur de la vue) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Aligne les boutons en haut */
+  border-right: 2px solid rgb(8, 18, 28); /* Bordure droite pour séparer le menu de l'image */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Ombre pour un effet de séparation */
+  z-index: 1; /* Place le menu au-dessus de l'image */
+  padding-top: 20px; /* Marge en haut pour éloigner les boutons du bord du menu */
+}
+
+.menu button {
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(96, 183, 30);
+  border: none;
+  border-radius: 20px;
+  width: 80%; /* Ajuste la largeur du bouton */
+}
+
+.dashboard-content {
+  flex: 1;
+  margin-left: 250px; /* Assure que le contenu ne chevauche pas le menu */
+  padding: 20px;
+  position: relative; /* Positionne le contenu au-dessus de l'image */
+  z-index: 1; /* Place le contenu au-dessus de l'image */
+}
+
+.dashboard-content h1 {
+  font-size: 2rem; /* Ajustez la taille de la police si nécessaire */
+  color: rgb(18, 1, 1); /* Couleur du texte */
+}
+
+.dashboard-content p {
+  font-size: 1.2rem; /* Ajustez la taille de la police si nécessaire */
+  color: rgb(14, 1, 1); /* Couleur du texte */
+}
+
+.container {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.btn-primary {
+  background-color: rgb(96, 183, 30);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: rgb(76, 143, 24);
+}
+/* src/style/style.css */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+button {
+  padding: 10px 20px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 15px;
+}
